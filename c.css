@@ -1,0 +1,41 @@
+body{
+	background-color: black;
+}
+
+.cont{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	background: gray;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	margin-top: 30px;
+	border-radius: 15px;
+}
+.cont p{
+	font-size: 20px;
+}
+
+button{
+	background-color: black;
+	border-radius: 5px;
+	width: 30px;
+	color: white;
+}
+
+button:hover{
+	background-color: white;
+	color: black;
+}
+
+span{
+	font-size: 20px;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+
+
