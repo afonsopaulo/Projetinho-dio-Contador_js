@@ -17,6 +17,11 @@
                 <a href="#cta-final" class="btn solid">Quero viralizar</a>
             </div>
         </nav>
+        <div class="hero-particles">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="hero-content">
             <div class="hero-copy">
                 <p class="badge">Mentoria criativa + growth</p>
@@ -26,28 +31,48 @@
                     <a href="#oferta" class="btn solid">Quero aprender a viralizar</a>
                     <a href="#timeline" class="btn ghost">Ver evolução</a>
                 </div>
-                <ul class="proof-list">
-                    <li>Wyll a caminho dos 500.000 seguidores</li>
-                    <li>Vídeos semanais com 2 milhões+ de visualizações</li>
-                    <li>Resultados consistentes e replicáveis</li>
-                </ul>
+                <div class="hero-metrics">
+                    <article class="metric">
+                        <span class="metric-number">500K</span>
+                        <span class="metric-label">Seguidores rumo à meta</span>
+                    </article>
+                    <article class="metric">
+                        <span class="metric-number">2M+</span>
+                        <span class="metric-label">Visualizações semanais</span>
+                    </article>
+                    <article class="metric">
+                        <span class="metric-number">Resultado</span>
+                        <span class="metric-label">Consistente e replicável</span>
+                    </article>
+                </div>
             </div>
             <div class="hero-visual">
-                <div class="key-aura">
-                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80" alt="Representação visual da chave do algoritmo" class="key-image">
+                <div class="hero-hologram">
+                    <span class="orb orb-1"></span>
+                    <span class="orb orb-2"></span>
+                    <div class="hologram-core">
+                        <div class="hologram-ring"></div>
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80" alt="Representação visual da chave do algoritmo" class="key-image">
+                    </div>
                     <div class="floating-card">
                         <p>Segredo do algoritmo</p>
                         <span>Creatividade + Dados</span>
                     </div>
                 </div>
                 <div class="mentors">
-                    <figure>
+                    <figure class="mentor-card">
                         <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Paulo" />
-                        <figcaption>Paulo &mdash; Estrategista criativo</figcaption>
+                        <figcaption>
+                            <strong>Paulo</strong>
+                            <small>Estrategista criativo</small>
+                        </figcaption>
                     </figure>
-                    <figure>
+                    <figure class="mentor-card">
                         <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=400&q=80" alt="Wyll" />
-                        <figcaption>Wyll &mdash; Especialista em viralização</figcaption>
+                        <figcaption>
+                            <strong>Wyll</strong>
+                            <small>Especialista em viralização</small>
+                        </figcaption>
                     </figure>
                 </div>
             </div>
@@ -95,7 +120,7 @@
         <section class="timeline reveal" id="timeline">
             <h2>Evolução real de views e seguidores</h2>
             <div class="timeline-graph">
-                <div class="line"></div>
+                <span class="line" aria-hidden="true"></span>
                 <div class="point" style="--i:1">
                     <span class="point-label">Início &mdash; 10K seguidores</span>
                 </div>

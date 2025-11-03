@@ -22,9 +22,31 @@ window.addEventListener('scroll', () => {
 });
 
 const floatingCard = document.querySelector('.floating-card');
-window.addEventListener('mousemove', (event) => {
+const particles = document.querySelectorAll('.hero-particles span');
+
+const applyParallax = (event) => {
   const { innerWidth, innerHeight } = window;
-  const offsetX = ((event.clientX / innerWidth) - 0.5) * 20;
-  const offsetY = ((event.clientY / innerHeight) - 0.5) * 20;
-  floatingCard.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+  const ratioX = (event.clientX / innerWidth) - 0.5;
+  const ratioY = (event.clientY / innerHeight) - 0.5;
+
+  if (floatingCard && window.innerWidth > 640) {
+    const offsetX = ratioX * 28;
+    const offsetY = ratioY * 28;
+    floatingCard.style.transform = `translate3d(${offsetX}px, ${offsetY}px, 0)`;
+  }
+
+  particles.forEach((particle, index) => {
+    const strength = (index + 1) * 6;
+    const x = ratioX * strength;
+    const y = ratioY * strength;
+    particle.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  });
+};
+
+window.addEventListener('mousemove', applyParallax);
+
+window.addEventListener('resize', () => {
+  if (floatingCard && window.innerWidth <= 640) {
+    floatingCard.style.transform = 'none';
+  }
 });
