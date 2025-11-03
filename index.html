@@ -1,23 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<title>Contador</title>
-	<link rel="stylesheet" type="text/css" href="c.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chave de Ouro do Algoritmo</title>
+    <link rel="stylesheet" href="c.css">
 </head>
 <body>
+    <div class="texture-background"></div>
+    <header class="hero" id="topo">
+        <nav class="nav">
+            <div class="logo">Chave de Ouro</div>
+            <div class="cta-group">
+                <a href="#oferta" class="btn ghost">Liberar acesso</a>
+                <a href="#cta-final" class="btn solid">Quero viralizar</a>
+            </div>
+        </nav>
+        <div class="hero-particles">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="hero-content">
+            <div class="hero-copy">
+                <p class="badge">Mentoria criativa + growth</p>
+                <h1>A Chave de Ouro do Algoritmo – aprenda a fórmula para viralizar com criatividade e crescer todos os dias</h1>
+                <p class="subtitle">Mentoria prática para destravar sua mente criativa, dominar o jogo do conteúdo e criar vídeos que explodem no alcance.</p>
+                <div class="hero-ctas">
+                    <a href="#oferta" class="btn solid">Quero aprender a viralizar</a>
+                    <a href="#timeline" class="btn ghost">Ver evolução</a>
+                </div>
+                <div class="hero-metrics">
+                    <article class="metric">
+                        <span class="metric-number">500K</span>
+                        <span class="metric-label">Seguidores rumo à meta</span>
+                    </article>
+                    <article class="metric">
+                        <span class="metric-number">2M+</span>
+                        <span class="metric-label">Visualizações semanais</span>
+                    </article>
+                    <article class="metric">
+                        <span class="metric-number">Resultado</span>
+                        <span class="metric-label">Consistente e replicável</span>
+                    </article>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-hologram">
+                    <span class="orb orb-1"></span>
+                    <span class="orb orb-2"></span>
+                    <div class="hologram-core">
+                        <div class="hologram-ring"></div>
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80" alt="Representação visual da chave do algoritmo" class="key-image">
+                    </div>
+                    <div class="floating-card">
+                        <p>Segredo do algoritmo</p>
+                        <span>Creatividade + Dados</span>
+                    </div>
+                </div>
+                <div class="mentors">
+                    <figure class="mentor-card">
+                        <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Paulo" />
+                        <figcaption>
+                            <strong>Paulo</strong>
+                            <small>Estrategista criativo</small>
+                        </figcaption>
+                    </figure>
+                    <figure class="mentor-card">
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=400&q=80" alt="Wyll" />
+                        <figcaption>
+                            <strong>Wyll</strong>
+                            <small>Especialista em viralização</small>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<div class="cont">
-	<div>
-		<p>Esse e meu contador</p>
-		
-		<button name="subtrair" onclick="d()">-</button>
-		<span id="n">0</span>
-		<button name="adicionar" onclick="i()">+</button>
-	</div>
-</div>
+    <main>
+        <section class="about reveal" id="quem-somos">
+            <h2>Quem somos</h2>
+            <div class="about-grid">
+                <article class="about-card">
+                    <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Paulo" class="profile">
+                    <h3>Paulo</h3>
+                    <p>Criador visionário que transforma ideias em formatos que prendem atenção. Especialista em criatividade aplicada e roteiros virais.</p>
+                    <div class="stats">
+                        <span>+1.2M views semanais</span>
+                        <span>150+ roteiros publicados</span>
+                    </div>
+                </article>
+                <article class="about-card">
+                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=400&q=80" alt="Wyll" class="profile">
+                    <h3>Wyll</h3>
+                    <p>Estrategista digital rumo a 500K seguidores que domina padrões de viralização e hacks de crescimento replicáveis.</p>
+                    <div class="stats">
+                        <span>A caminho dos 500K seguidores</span>
+                        <span>2M+ views semanais</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
+        <section class="learn reveal" id="aprendizado">
+            <h2>O que você vai aprender</h2>
+            <div class="learn-grid">
+                <div class="learn-item">Como pensar como o algoritmo pensa</div>
+                <div class="learn-item">Técnicas de criatividade para novos ângulos de conteúdo</div>
+                <div class="learn-item">Construção de roteiros virais</div>
+                <div class="learn-item">Psicologia por trás do engajamento</div>
+                <div class="learn-item">Padrões que viralizam nas plataformas</div>
+                <div class="learn-item">Hack de atenção e retenção</div>
+                <div class="learn-item">Estratégia real para ganhar seguidores de forma acelerada</div>
+            </div>
+        </section>
 
-<script src="j.js" type="text/javascript"></script>
+        <section class="timeline reveal" id="timeline">
+            <h2>Evolução real de views e seguidores</h2>
+            <div class="timeline-graph">
+                <span class="line" aria-hidden="true"></span>
+                <div class="point" style="--i:1">
+                    <span class="point-label">Início &mdash; 10K seguidores</span>
+                </div>
+                <div class="point" style="--i:2">
+                    <span class="point-label">3 meses &mdash; 150K seguidores</span>
+                </div>
+                <div class="point" style="--i:3">
+                    <span class="point-label">6 meses &mdash; 320K seguidores</span>
+                </div>
+                <div class="point" style="--i:4">
+                    <span class="point-label">Hoje &mdash; 2M+ views semanais</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-proof reveal" id="prova-social">
+            <h2>Depoimentos e resultados</h2>
+            <div class="proof-grid">
+                <article class="proof-card comment">
+                    <span class="icon">💬</span>
+                    <p>“Nunca imaginei que um roteiro pudesse gerar tanta retenção. Cada aula abre minha mente.”</p>
+                    <small>@criadorinspirado</small>
+                </article>
+                <article class="proof-card screenshot">
+                    <span class="icon">📈</span>
+                    <p>Print de analytics com pico de 2.1M views</p>
+                </article>
+                <article class="proof-card comment">
+                    <span class="icon">🚀</span>
+                    <p>“A chave do algoritmo existe e está aqui. Viralizei duas vezes na mesma semana!”</p>
+                    <small>@videoexplosivo</small>
+                </article>
+            </div>
+        </section>
+
+        <section class="offer reveal" id="oferta">
+            <h2>Oferta e bônus exclusivos</h2>
+            <div class="offer-grid">
+                <article class="offer-card">
+                    <h3>Acesso à mentoria completa</h3>
+                    <p>Encontros ao vivo, frameworks e acompanhamento para aplicar tudo na prática.</p>
+                </article>
+                <article class="offer-card">
+                    <h3>Exercícios e tarefas práticas</h3>
+                    <p>Aplicações semanais para destravar criatividade e gerar consistência de posts.</p>
+                </article>
+                <article class="offer-card">
+                    <h3>Comunidade de criadores</h3>
+                    <p>Networking, feedbacks rápidos e desafios coletivos para acelerar resultados.</p>
+                </article>
+                <article class="offer-card">
+                    <h3>Modelo de roteiro viral</h3>
+                    <p>Template replicável dos criadores que dominam o algoritmo.</p>
+                </article>
+            </div>
+            <a href="#cta-final" class="btn solid large">Sim, eu quero a chave do algoritmo</a>
+        </section>
+
+        <section class="faq reveal" id="faq">
+            <h2>Perguntas frequentes</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>Para quem é a mentoria?</summary>
+                    <p>Para criadores que desejam viralizar de forma consistente e acelerar o crescimento de seguidores.</p>
+                </details>
+                <details>
+                    <summary>Preciso ter experiência?</summary>
+                    <p>Não! Você vai aprender a desenvolver ideias do zero e a aplicar frameworks que funcionam.</p>
+                </details>
+                <details>
+                    <summary>Quanto tempo até ver resultados?</summary>
+                    <p>Aplicando as estratégias, nossos alunos relatam ganhos expressivos nas primeiras semanas.</p>
+                </details>
+                <details>
+                    <summary>As aulas ficam gravadas?</summary>
+                    <p>Sim, você terá acesso às gravações e materiais complementares para revisar quando quiser.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cta-final" id="cta-final">
+        <div class="cta-box reveal">
+            <h2>Abra a porta do sucesso — pegue a chave do algoritmo agora.</h2>
+            <p>Transforme seu conteúdo, hackeie a atenção e conquiste o crescimento que você merece.</p>
+            <a href="#topo" class="btn solid large">Liberar acesso</a>
+            <a href="#oferta" class="btn ghost">Sim, eu quero a chave do algoritmo</a>
+        </div>
+        <p class="footer-note">© 2024 Chave de Ouro do Algoritmo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="j.js"></script>
 </body>
 </html>
